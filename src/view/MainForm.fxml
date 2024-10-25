@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContext" minWidth="-Infinity" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <ImageView fitHeight="114.0" fitWidth="148.0" layoutX="490.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/my%20logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="427.0" layoutX="392.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/blue%20ocean%20name.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="403.0" layoutY="281.0" prefHeight="119.0" prefWidth="394.0" text="Welcome" textFill="#1431b5bd">
+         <font>
+            <Font name="System Bold" size="81.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="371.0" prefHeight="131.0" prefWidth="928.0" text="   Blue Ocean Hotel" textFill="#167dd7">
+         <font>
+            <Font name="System Bold Italic" size="90.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="536.0" prefHeight="27.0" prefWidth="516.0" text="Reservation System,Please select user type to continue" textFill="#208db9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnReception" layoutX="282.0" layoutY="629.0" onAction="#btnReceptionOnAction" prefHeight="69.0" prefWidth="164.0" style="-fx-background-image: C:\Users\Emethra\Desktop\BlueOceanHotel\src\assert\admin.png;" text="Reception" textFill="#1c59b5">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/reception.jpg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnAdmin" layoutX="731.0" layoutY="629.0" onAction="#btnAdminOnAction" prefHeight="61.0" prefWidth="179.0" text="Admin" textFill="#1c59b5">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="btnadmin" fitHeight="42.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assert/admin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

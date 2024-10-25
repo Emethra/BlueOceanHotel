@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyMealController">
+   <children>
+      <Label layoutX="176.0" layoutY="18.0" text="Modify Meal Package" textFill="#156cd7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgBack" fitHeight="38.0" fitWidth="56.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#imgBackMouseClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/arrow%20left.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="334.0" layoutX="130.0" layoutY="115.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/blue%20ocean%20name.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="136.0" layoutX="194.0" layoutY="224.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/my%20logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="94.0" text="Select Meal Which You Want To Modify" />
+      <Label layoutX="33.0" layoutY="181.0" text="Item already in meal package" />
+      <Label layoutX="33.0" layoutY="271.0" text="Include new item" />
+      <JFXComboBox fx:id="cbmMeals" layoutX="321.0" layoutY="89.0" prefHeight="31.0" prefWidth="263.0" />
+      <JFXTextArea fx:id="txtAreaItem" layoutX="313.0" layoutY="151.0" prefHeight="60.0" prefWidth="271.0" />
+      <JFXTextArea fx:id="txtAreaNewItem" layoutX="317.0" layoutY="261.0" prefHeight="53.0" prefWidth="271.0" />
+      <JFXButton fx:id="btnUpdate" layoutX="264.0" layoutY="347.0" onAction="#btnUpdateOnAction" style="-fx-background-color: Green;" text="Update" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

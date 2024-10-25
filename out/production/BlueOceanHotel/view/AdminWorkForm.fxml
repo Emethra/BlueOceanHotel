@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="workAdminContext" prefHeight="400.0" prefWidth="512.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminWorkFormController">
+   <children>
+      <Label fx:id="lblRooms" layoutX="241.0" layoutY="45.0" onMouseClicked="#lblRoomsMouseClick" text="Rooms" textFill="#0a58c5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblMeal" layoutX="209.0" layoutY="112.0" onMouseDragged="#lblMealMouseClick" text="Meal Package" textFill="#0a58c5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblIncome" layoutX="199.0" layoutY="200.0" onMouseClicked="#lblIncomeMouseClick" text="Income Repoart" textFill="#0a58c5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblIncomeReport" layoutX="69.0" layoutY="27.0" onMouseClicked="#lblIncomeReportMouseClick" text="Back to main" />
+      <ImageView fx:id="imgHotelName" fitHeight="142.0" fitWidth="480.0" layoutX="56.0" layoutY="127.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/blue%20ocean%20name.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLeftArw" fitHeight="46.0" fitWidth="57.0" layoutX="8.0" layoutY="14.0" onMouseClicked="#imgLeftArwMouseClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/arrow%20left.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="265.0" layoutX="171.0" layoutY="269.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/my%20logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

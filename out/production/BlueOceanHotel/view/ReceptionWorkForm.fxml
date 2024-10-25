@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="WorkReceptionContext" prefHeight="400.0" prefWidth="512.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionWorkFormController">
+   <children>
+      <Label fx:id="lblMaintenace" layoutX="135.0" layoutY="220.0" onMouseClicked="#lblMaintenaceMouseClick" text="Mark room in maintenace" textFill="#0a58c5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fx:id="WorkReception" fitHeight="120.0" fitWidth="479.0" layoutX="81.0" layoutY="83.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/blue%20ocean%20name.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="291.0" layoutX="128.0" layoutY="256.0" opacity="0.26" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/my%20logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBack" fitHeight="46.0" fitWidth="57.0" layoutX="8.0" layoutY="6.0" onMouseClicked="#imgBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/arrow%20left.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="19.0" prefHeight="21.0" prefWidth="96.0" text="Back to main">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <Label fx:id="lblReserve" layoutX="164.0" layoutY="143.0" onMouseClicked="#lblReserveMouseClick" prefHeight="30.0" prefWidth="165.0" text="Reserve a room" textFill="#0a58c5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

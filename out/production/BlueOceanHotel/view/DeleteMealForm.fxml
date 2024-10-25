@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteMealFormController">
+   <children>
+      <Label layoutX="202.0" layoutY="29.0" text="Delete Meal Package" textFill="#156cd7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgBack" fitHeight="41.0" fitWidth="68.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#imgBackMouseClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/arrow%20left.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="105.0" text="Package Type" />
+      <Label layoutX="38.0" layoutY="190.0" text="Delete Item" />
+      <JFXComboBox fx:id="cmbPackage" layoutX="244.0" layoutY="100.0" prefHeight="31.0" prefWidth="259.0" />
+      <JFXTextArea layoutX="249.0" layoutY="172.0" prefHeight="98.0" prefWidth="259.0" />
+      <JFXButton fx:id="btnDelete" layoutX="257.0" layoutY="332.0" onAction="#btnDelete" style="-fx-background-color: Red;" text="Delete" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
